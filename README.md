@@ -85,14 +85,13 @@ Monitor incoming intake folders (e.g. Scans, Downloads, Case Intake) and automat
 
 ---
 
-## 🛠️ Technology Stack & Benchmarks
+## 🛠️ Technology Stack
 
 - **Core Logic:** Python 3.10+ (utilizing walrus `:=` hash streaming, dataclasses, asynchronous task executors), pywebview / FastAPI bridge.
-- **Inference Engine:** Offline Ollama local server running `ministral-3:3b` (classification) and `qwen3-embedding:4b` (semantic deduplication).
+- **Inference Engine:** Offline Ollama local server running `ministral-3:3b` (classification), `qwen2.5:3b` (summarisation), and `qwen3-embedding:4b` (semantic deduplication).
 - **Vision OCR:** `qwen3-vl:4b` for scanned invoices, court stamps, and legacy unsearchable PDFs.
-- **Vector Memory:** LanceDB local embedded vector database (`vectors.lance`).
+- **Vector Memory:** LanceDB local embedded vector database (`vectors.lance`, 2560-dimensional embeddings).
 - **PDF Extraction Architecture:** Isolated child processes via `multiprocessing.Pool` with hard timeouts to prevent corrupted or malicious PDFs from crashing the engine.
-- **Throughput:** Scans and processes standard legal folders at **200+ files per second** (I/O bound) on consumer NVMe hardware.
 
 ---
 
