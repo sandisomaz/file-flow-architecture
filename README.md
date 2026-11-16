@@ -95,4 +95,12 @@ Monitor incoming intake folders (e.g. Scans, Downloads, Case Intake) and automat
 
 ---
 
-Architected and maintained by **Sandiso Mazibuko**.
+---
+
+## 🔗 Portfolio & Technical Dossier
+
+- **Live System Overview:** [sandisomazibuko.com/technology/#fileflow](https://sandisomazibuko.com/technology/#fileflow)
+- **Architecture Dossier:** [FileFlow Architecture Dossier](https://sandisomazibuko.com/documents/fileflow-architecture-dossier/)
+- **Canonical Portfolio:** [Sandiso Mazibuko](https://sandisomazibuko.com/) · [hello@sandisomazibuko.com](mailto:hello@sandisomazibuko.com)
+
+Architected and maintained by **[Sandiso Mazibuko](https://sandisomazibuko.com/)**.
